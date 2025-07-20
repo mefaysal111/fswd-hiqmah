@@ -6,24 +6,29 @@
     <title>Details</title>
 </head>
 <body>
+    <header style="text-align: center";>
+    <h1>Registration Form</h1>
+    </header>
     <form method="post" action="">
 <fieldset>
  <legend>Personal details</legend> 
      
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your full name"> <br>
+    <label for="first name">First Name</label>
+    <input type="text" id="first name" name="first name" required placeholder="Enter your first name"> &nbsp;
+    <label for="last name">Last Name</label>
+    <input type="text" id="last name" name="last name" required placeholder="Enter your last name"> <br> <br>
     <label for="email">Email ID</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your Email address"> <br>
+    <input type="email" id="email" name="email" required placeholder="email@abc.com"> <br> <br>
     <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9] {10}"> <br>
-    <label>Gender</label> <br>
+    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10,}"> <br> <br><br>
+    <label>Gender</label> <br> <br>
     <input type="radio" id=male name="gender" value="male" >
-    <label for="male">Male</label> <br>
+    <label for="male">Male</label> <br> <br>
     <input type="radio" id=female name="gender" value="female" >
-    <label for="female">Female</label> <br>
+    <label for="female">Female</label> <br> <br>
     <input type="radio" id=other name="gender" value="other" >
-    <label for="other">Other</label> <br>
-</fieldset>
+    <label for="other">Other</label> <br> <br>
+</fieldset> <br>
 
 <fieldset>
     <legend>Course Details</legend>
@@ -34,14 +39,14 @@
            <option value="biology">Biology</option>
             <option value="Maths">Maths</option>
               <option value="English">English</option>
-    </select> <br>
-    <label for="message">Describe</label>
-    <textarea id="message" name="message" rows="10" cols="10" required></textarea>
+    </select> <br> <br>
+    <label for="message">Tell us about your knowledge related course</label>
+    <textarea id="message" name="message"  required></textarea>
 </fieldset>
 
       <input type="checkbox" id="terms" name="terms" required> 
-      <label for="tems"><a href="#">I agree to terms and conditions</a></label>  <br>
-      <button type="submit">SUBMIT</button>
+      <label for="tems"><a href="terms.html">I agree to terms and conditions</a></label>  <br>  <br>
+      <button type="submit">SUBMIT</button>  &nbsp;
        <button type="reset">RESET</button>
 
     </form>
