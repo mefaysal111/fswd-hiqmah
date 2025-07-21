@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+   
+</head>
+<body>
+    <header style="text-align: center";>
+    <h1>Registration Form</h1>
+    </header>
+    <form method="post" action="">
+<fieldset>
+ <legend>Personal details</legend> 
+     
+    <label for="first name">First Name</label>
+    <input type="text" id="first name" name="first name" required placeholder="Enter your first name"> 
+    <label for="last name">Last Name</label>
+    <input type="text" id="last name" name="last name" required placeholder="Enter your last name"> <br> 
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" required placeholder="email@abc.com"> <br>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10,}"> <br>
+    <label>Gender</label> <br> 
+    <input type="radio" id=male name="gender" value="male" >
+    <label for="male">  <span style="font-weight: normal;">Male</span></Male></label> <br> 
+    <input type="radio" id=female name="gender" value="female" >
+    <label for="female"><span style="font-weight: normal;">Female</span></label> <br> 
+    <input type="radio" id=other name="gender" value="other" >
+    <label for="other"><span style="font-weight: normal;">Other</span></label> <br> 
+</fieldset> <br>
+
+<fieldset>
+    <legend>Create User Name and Password</legend> 
+     <label for="User name">User Name</label>
+    <input type="text" id="User name" name="User name" required placeholder="Enter user name"> 
+
+     <label for="Password">Enter Password</label>
+    <input type="password" id="Password" name="Password" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="***********"  title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.">
+    <label for="confirm">Re-enter Password</label>
+    <input type="password" id="confirm" name="confirm"  minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="***********"  title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number and passwordmust match"required placeholder="***********">
+</fieldset>
+
+      <input type="checkbox" id="terms" name="terms" required> 
+      <label for="tems"><a href="terms.html">I agree to terms and conditions</a></label>  <br>  <br>
+      <button type="submit">SUBMIT</button>  &nbsp;
+       <button type="reset">RESET</button>
+
+    </form>
+</body>
+</html>
