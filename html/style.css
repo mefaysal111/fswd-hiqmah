@@ -51,7 +51,10 @@
       border-radius: 8px;
       box-sizing: border-box;
     }
-
+ input:focus{
+  border: 2px solid red;
+  outline:none;
+ }
     input[type="checkbox"] {
       margin-right: 5px;
     }
